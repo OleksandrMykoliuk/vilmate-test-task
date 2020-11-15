@@ -1,0 +1,10 @@
+.logout li:nth-child(3),
+.logout li:nth-child(4),
+.logout li:nth-child(5) {
+  display: none;
+}
+
+.logout .item-login {
+  display: inherit;
+  margin-left: 12px;
+}

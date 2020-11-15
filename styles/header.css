@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.header__logo {
+  display: block;
+  margin: 20px 0px 20px 52px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 10px;
+  background-color: #5f4b94;
+}
+
+.header__nav {
+  margin-right: 40px;
+}
+
+@media (max-width: 1023px) {
+  .header__logo {
+    margin: 10px 0px 10px 32px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .header__nav {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,79 @@
+.item-home {
+  background-color: rgb(222, 220, 220);
+  background-image: url("../images/home.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: center;
+}
+
+.item-login {
+  display: none;
+  position: relative;
+  margin-right: 32px;
+  background-image: url("../images/login.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: center;
+}
+
+.item-login::after {
+  position: absolute;
+  color: #5f4b94;
+  font-weight: 600;
+  content: "Login";
+  left: 48px;
+  top: 16px;
+}
+
+.item-notes {
+  background-color: #00d99c;
+  background-image: url("../images/pen.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: center;
+}
+
+.item-reminders {
+  position: relative;
+  background-color: rgb(222, 220, 220);
+  background-image: url("../images/bell.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: center;
+}
+
+.item-counter {
+  position: absolute;
+  left: 32px;
+  width: 20px;
+  height: 20px;
+  background-color: #e70d4a;
+  font-size: 10px;
+  line-height: 20px;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.item-burger {
+  background-image: url("../images/burger.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: center;
+}
+
+@media (max-width: 1023px) {
+  .item-login {
+    margin-right: 0;
+  }
+
+  .item-login::after {
+    content: "";
+  }
+
+  .item-notes,
+  .item-home,
+  .item-reminders {
+    display: none;
+  }
+}
